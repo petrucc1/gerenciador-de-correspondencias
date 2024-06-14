@@ -1,0 +1,55 @@
+/* Estilos globais */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Estilos para todos os títulos */
+h1, h2, h3, h4, h5, h6 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para listas, removendo decoração e estilo padrão */
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos para a seção de dados das encomendas */
+div#order-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+/* Estilos específicos para as listas de moradores e encomendas */
+ul#residents,
+ul#orders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer span a {
+    text-decoration: none;
+    color: green;
+}

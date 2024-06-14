@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciador de Correspondências</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Registro de Encomendas</h1>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Formulário para cadastro de encomendas -->
+        <form id="order-form">
+            <label for="morador">Nome do Morador:</label>
+            <input type="text" id="morador" name="morador">
+
+            <label for="transportadora">Transportadora:</label>
+            <select id="transportadora" name="transportadora">
+                <option value="transportadora1">Transportadora 1</option>
+                <option value="transportadora2">Transportadora 2</option>
+                <option value="transportadora3">Transportadora 3</option>
+                <option value="transportadora4">Transportadora 4</option>
+                <option value="transportadora5">Transportadora 5</option>
+            </select>
+
+            <button type="submit">Registrar encomenda</button>
+        </form>
+
+        <!-- Seção para exibição das encomendas registradas -->
+        <section id="order-registration">
+            <h2>Encomendas Registradas</h2>
+            <div id="order-data">
+                <!-- Lista de moradores -->
+                <ul id="residents">
+                    <li>João</li>
+                    <li>Maria</li>
+                    <li>Carlos</li>
+                </ul>
+
+                <!-- Lista de encomendas -->
+                <ul id="orders">
+                    <li>Encomenda 1</li>
+                    <li>Encomenda 2</li>
+                    <li>Encomenda 3</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <span>Feito com &hearts; por <a href="https://github.com/ArgosMC" target="_blank">Alessandro Molina</a> e <a href="https://github.com/petrucc1" target="_blank">Sarah Petrucci</a></span>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

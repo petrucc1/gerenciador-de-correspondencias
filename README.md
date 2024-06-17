@@ -33,12 +33,21 @@ Além disso, o projeto será integrado a um banco de dados MongoDB para armazena
 
 ```plaintext
 registrador-encomendas/
-├── index.html
-├── styles/
-│   └── style.css
-├── scripts/
+├── backend/
+│   ├── models/
+│   │   └── Package.js
+│   ├── routes/
+│   │   └── packages.js
+│   ├── server.js
+│   └── .env
+├── frontend/
+│   ├── index.html
+│   ├── style.css
 │   └── script.js
+└── package.json
 └── README.md
+└── SECURITY.md
+└── LICENSE
 ```
 
 ## Como Contribuir

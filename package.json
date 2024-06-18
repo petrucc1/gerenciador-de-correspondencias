@@ -1,0 +1,14 @@
+{
+  "name": "gerenciador-de-correspondencias",
+  "version": "1.0.0",
+  "description": "O **Registrador de Encomendas** é uma aplicação web desenvolvida para gerenciar a entrada e saída de encomendas em um condomínio. Inicialmente, será construída utilizando HTML, CSS e JavaScript. O objetivo principal é permitir que o porteiro registre o nome do morador e a transportadora responsável pela entrega. Em futuras versões, o projeto será expandido para incluir funcionalidades adicionais, como a data de chegada e retirada do pacote, assinatura do morador ao retirar a encomenda, e o nome do porteiro responsável pela entrega.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.7.0"
+  }
+}

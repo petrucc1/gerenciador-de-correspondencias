@@ -1,55 +1,127 @@
-/* Estilos globais */
+:root { 
+    --green: #13aa52;
+    --green-light: #4caf50;
+    --gray: #2d2d2d;
+    --light-gray: #e0e0e0;
+    --form-shadow: rgba(0, 0, 0, 0.2);
+}
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
+    background-color: var(--light-gray);
+    overflow-x: hidden;
 }
 
-/* Estilos para todos os títulos */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    display: flex;
-    justify-content: center;
+    color: var(--green);
+    text-align: center;
 }
 
-/* Estilos para o formulário */
+header, footer {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--gray);
+    color: var(--light-gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 form {
+    height: 350px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--form-shadow);
+    margin-bottom: 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Estilos para listas, removendo decoração e estilo padrão */
-ul li {
-    text-decoration: none;
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select, button {
+    width: calc(100% - 40px);
+    padding: 12px;
+    border: 1px solid var(--green-light);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+form input, form select {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--green-light);
+}
+
+#order-registration {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#order-data {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+ul#residents, ul#orders {
     list-style: none;
+    padding: 0;
+    flex: 1;
 }
 
-/* Estilos para a seção de dados das encomendas */
-div#order-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 50px;
+ul#residents li, ul#orders li {
+    margin-bottom: 10px;
+    color: var(--gray);
 }
 
-/* Estilos específicos para as listas de moradores e encomendas */
-ul#residents,
-ul#orders {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
 }
 
 footer span a {
     text-decoration: none;
-    color: green;
+    color: var(--green-light);
 }
